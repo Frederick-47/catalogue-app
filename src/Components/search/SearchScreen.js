@@ -3,7 +3,7 @@ import { getHeroByName } from '../../selectors/getHeroByName';
 import { HeroCard } from '../hero/HeroCard';
 import { useForm } from '../hooks/useForm';
 import queryString from 'query-string'
-import { useEffect, useMemo } from 'react';
+import {  useMemo } from 'react';
 
 // const initialState = [{}]
 

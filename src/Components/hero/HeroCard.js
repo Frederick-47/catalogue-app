@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+const heroImages = require.context('../../assets', true)
+
 
 export const HeroCard = ({
     id,
@@ -10,7 +12,7 @@ export const HeroCard = ({
     characters,
 }) => {
 
-const imagePath = `/assets/${id}.jpg`
+// const imagePath = `/assets/${id}.jpg`
 
   return (
 
@@ -19,7 +21,7 @@ const imagePath = `/assets/${id}.jpg`
             
             <div className='row no-gutters'>
                 <div className='col-4'>
-                <img src={imagePath} className="card-img" alt={superhero}/>
+                <img src={heroImages(`./${id}.jpg`)} className="card-img" alt={superhero}/>
                 </div>
                 <div className='col-md-8'>
                     <div className='card-body'>

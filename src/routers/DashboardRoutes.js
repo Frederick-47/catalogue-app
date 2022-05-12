@@ -2,7 +2,7 @@ import { Navbar } from "../Components/ui/Navbar"
 import { MarvelScreen } from '../Components/marvel/MarvelScreen'
 import { SearchScreen } from '../Components/search/SearchScreen'
 import { DcScreen } from '../Components/dc/DcScreen'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import { Hero } from "../Components/hero/Hero"
 
 

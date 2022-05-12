@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext';
-import { authReducer } from '../../auth/authReducer';
+// import { authReducer } from '../../auth/authReducer';
 import { types } from '../../types/types';
 
 
@@ -16,11 +16,11 @@ export const LoginScreen = () => {
 
 
 
-  const {dispatch, user} = useContext(AuthContext)
+  const {dispatch} = useContext(AuthContext)
 
   const navigate =  useNavigate();
 
-  const {login, logout} = types
+  const {login} = types
 
   console.log(login)
 
